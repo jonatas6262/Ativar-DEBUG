@@ -106,7 +106,7 @@ function triggerX()
 }
 </script>
 </head>
-	<body id="bodyId" style="background-color:#FFD097">
+	<body id="bodyId" style="background-color:#202020">
 	<div id="headerId" style="color:#CC2010">
 	<h1>PS3Xploit Tools v3.0.5 - PS3 HAN Debug PKG Enabler</h1>
 	<h2><span style="color:#000000">Cortesia da equipe PS3Xploit</span></h2><b>esc0rtd3w </b><span style="color:#000000;"> (Debugging & Testing) <b>|</b> </span><b>habib </b><span style="color:#000000"> (Reverse Engineering & Debugging) <b>|</b> </span><b>bguerville </b><span style="color:#000000"> (ROP, Javascript & Debugging)</span><hr>
