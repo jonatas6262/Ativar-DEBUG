@@ -2318,7 +2318,7 @@ function initROP(init)
 		if((sf===stack_frame)&&(j2===jump_2)&&(j1===jump_1))
 		{
 			if(t_out!==0){clearTimeout(t_out);}
-			showResult(hr+"<h1><b><font color=%22386E38%22>HAN Debug PKG Enabler initialized successfully.</font></b></h1><h3><b><span style='color:#000000;'>You can now proceed to launch exploit !</span></b></h3>");
+			showResult(hr+"<h1><b><font color=%22386E38%22>Debug PKG Inicializado com Sucesso.</font></b></h1><h3><b><span style='color:#ffffff;'>Clique em -ATIVAR Debug PKG- Para Ativar seu Debug</span></b></h3>");
 			enable_trigger();
 		}
 		else
@@ -2333,7 +2333,7 @@ function initROP(init)
 	catch(e)
 	{
 		debug=true;
-		logAdd(br+"HAN Debug PKG Enabler initialization failed because the following exception was thrown during execution:"+br+e+" at : "+e.lineNumber);
+		logAdd(br+"A inicialização do Debug PKG falhou porque a seguinte exceção foi lançada durante a execução:"+br+e+" at : "+e.lineNumber);
 		debug=false;
 	}
 }
@@ -2341,10 +2341,10 @@ function initROP(init)
 function triggerX()
 {
 		clearLogEntry();
-		showResult(hr+"<h2><b><span style='color:#000000;'>Enabling Debug PKG...</span></b></h2>");
+		showResult(hr+"<h2><b><span style='color:#000000;'>Ativando Debug PKG...</span></b></h2>");
 		disable_all();
 		setTimeout(trigger,1000,jump_1_addr);
-		setTimeout(rop_exit,2000,hr+"<h1><b><font color=%22386E38%22>Debug PKG are enabled.</font></b></h1>");
+		setTimeout(rop_exit,2000,hr+"<h1><b><font color=%22386E38%22>Debug PKG foi Ativado com Sucesso</font></b></h1>");
 		cleanGUI();
 }
 </script>
@@ -2361,7 +2361,7 @@ Também gostaríamos de agradecer a todos os ps3 hackers / devs da comunidade, d
 	<p><span style="color:#ffffff">Mais detalhes e notícias em</span> <a href="http://www.psx-place.com/forums/ps3xploit">http://www.psx-place.com</a><br><br><span style="color:#ffffff">Site Oficial do Desbloqueio PS3Xploit:</span> <a href="http://ps3xploit.com">http://ps3xploit.com</a></p>
 	<hr></div>
 	<p><button id="btnROP" type="button" onclick="initROP(true);" autofocus>Iniciar Debug PKG</button> | Auto-Fechar Navegador <input type="checkbox" id="auto_close" name="aclose" checked="checked" onclick="autoclose();"/><span id="dex_txt" style="visibility:hidden"> | DEX mode<input type="checkbox" id="dex" name="DEX" disabled="" onclick="dex();"/></span></p>
-	<p><button id="btnTrigger" disabled="" type="button" onclick="triggerX();">Ativar Debug PKG</button><span id="reset" style="visibility:hidden"> | <button id="btnReset" type="button" onclick="disable_trigger();">Reset</button></span></p>
+	<p><button id="btnTrigger" disabled="" type="button" onclick="triggerX();">Ativar Debug PKG</button><span id="reset" style="visibility:hidden"> | <button id="btnReset" type="button" onclick="disable_trigger();">Resetar</button></span></p>
 	<div id="result" style="color:#CC2010"></div><br>
 	<div id="log"></div>
 	<div id="exploit" ></div>
